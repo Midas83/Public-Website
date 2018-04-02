@@ -5,9 +5,27 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
+  <title>Dexter Weatherly</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.ico/favicon-16x16.png">
+<link rel="manifest" href="./assets/favicon.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./assets/favicon.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
 
   <!-- Bootstrap CSS -->
@@ -21,11 +39,8 @@
 
 
 <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">WebSiteName</a>
-      </div>
       <ul class="nav navbar-nav navbar-right nav-links">
         <li class="active">
           <a href="#">Home</a>
@@ -47,8 +62,8 @@
 
     <!--Header Section-->
     <div class="row header">
-      <div class="col-lg-12">
-        <img src="./assets/profile.jpg" class="img-responsive img-circle center-block" style="height: 180px; width: 180px;">
+      <div class="col-lg-12" style="padding: 0;">
+        <img src="./assets/header-image.jpg" class="img-responsive" style="width: 100%; margin: 0;">
       </div>
     </div>
 
@@ -87,10 +102,36 @@
 
     <div id="about-me" class="row">
       <div class="col-lg-4">
-          <img id="data-img" src="./assets/data-security-tablet-projection-2.png" class="img-responsive center-block">
+        <img id="data-img" src="./assets/data-security-tablet-projection-2.png" class="img-responsive center-block" style="display: none">
       </div>
-      <div class="col-lg-8">
-        
+      <div id="about-me-title" class="col-lg-8 text-center">
+        <h1 id="about-me-intro1">Help Create</h3>
+          <h1 id="about-me-intro2">A Great</h3>
+            <h1 id="about-me-intro3">Client Experience</h3>
+      </div>
+    </div>
+
+    <div class="row content top-padding">
+      <div class="col-lg-4 col-md-4 col-sm-6" style="padding-left: 5%">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate libero mauris, vitae malesuada mauris porttitor
+          at. Nam scelerisque enim ac libero mattis pharetra sit amet eget neque. Fusce et efficitur nunc. Quisque maximus
+          dui ut tellus condimentum, sit amet sollicitudin ex porta. Class aptent taciti sociosqu ad litora torquent per
+          conubia nostra, per inceptos himenaeos. Suspendisse aliquet, arcu quis dignissim vehicula, velit nulla tincidunt
+          neque, ac volutpat erat urna nec risus. Maecenas imperdiet, est sed pretium mollis, nulla ante rhoncus nisi, ac
+          tincidunt est ipsum non quam. Nunc id leo quis ligula elementum efficitur.</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <p>Donec ultricies id arcu eu semper. Sed et nisl non nisl ullamcorper sollicitudin eget ac neque. Curabitur ullamcorper
+          elementum mi, vel tempus urna consectetur vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Nam faucibus et ligula id dictum. Nunc ante quam, gravida et ornare nec, fermentum eu lectus.
+          Aenean sagittis libero non est pulvinar, quis rutrum lacus vehicula. Vivamus aliquet, ex ac placerat rutrum, tortor
+          magna scelerisque est, tempor fermentum neque odio non metus. Cras laoreet dolor a massa dapibus semper.</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6" style="padding-right: 5%">
+        <p>Sed sagittis, arcu luctus sollicitudin placerat, nisi arcu elementum nisl, vel tempus ligula libero eget odio. Integer
+          posuere velit in justo vehicula bibendum. Praesent a venenatis ligula. Duis elementum venenatis urna ut semper.
+          Nullam tempus libero at laoreet pellentesque. Duis rhoncus at arcu pharetra congue. Donec sed egestas quam. Nam
+          et consectetur nisi.</p>
       </div>
     </div>
 
@@ -102,23 +143,18 @@
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-  crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
   <script>
 
-   $("#about-me").mouseenter(function() {
-    $("data-img").show("slide","slow");
-   })
-   
-  
+    $("#about-me").scroll(function () {
+      $("#data-img").show("slow");
+    })
+
+
+
+
   </script>
 
 </body>
